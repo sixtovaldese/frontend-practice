@@ -1,0 +1,36 @@
+.header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    @include flex-center;
+    justify-content: space-between;
+  
+    &__logo {
+      font-size: 40px;
+    }
+  
+    &__nav {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+  
+    &__link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    &__button {
+      background-color: $secondary-color;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      @include transition(background-color);
+  
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+  

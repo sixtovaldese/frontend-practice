@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hospital Privado</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header__nav">
+        <div class="header__logo">
+            <i class="fas fa-hospital"></i>
+        </div>
+        <ul class="header__nav-links">
+            <li class="header__nav-item"><a class="header__link" href="index.html">Inicio</a></li>
+            <li class="header__nav-item"><a class="header__link" href="equipo-medico.html">Equipo Médico</a></li>
+            <li class="header__nav-item"><a class="header__link" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="contacto">
+        <h1 class="contacto__title">Contáctanos</h1>
+        <p class="contacto__description">
+            Nos encantaría saber de ti. Por favor, completa el formulario a continuación para contactarnos.
+        </p>
+        
+        <form class="contacto__form">
+            <label for="nombre" class="contacto__label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="contacto__input" required>
+
+            <label for="email" class="contacto__label">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" class="contacto__input" required>
+
+            <label for="asunto" class="contacto__label">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" class="contacto__input" required>
+
+            <label for="mensaje" class="contacto__label">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="contacto__textarea" required></textarea>
+
+            <button type="submit" class="button button--primary">Enviar</button>
+        </form>
+    </section>
+
+    <section class="mapa">
+        <h2 class="mapa__title">Nuestra Ubicación</h2>
+        <div class="mapa__estatico">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="mapa__address">Av. Siempre Viva 123, Springfield</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__links">
+        <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a>
+    </div>
+    <div class="footer__contact">
+        <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i> contacto@hospitalprivado.com</p>
+    </div>
+    <div class="footer__social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+.footer {
+    background-color: #b3e0ff;  // Fondo celeste
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  
+    &__links {
+      margin-bottom: 10px;
+    }
+  
+    &__contact {
+      font-size: 14px;
+    }
+  
+    &__social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  

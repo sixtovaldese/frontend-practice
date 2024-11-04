@@ -1,0 +1,39 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/reset';
+@import './base/typography';
+@import './components/header';
+@import './components/footer';
+@import './components/buttons';
+@import './layout/home';
+@import './layout/contact';
+@import './layout/grid';
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header, .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .servicios {
+    @include two-columns;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .servicios {
+    @include two-columns;
+  }
+}
+
+@media (min-width: 1025px) {
+  .servicios {
+    @include three-columns;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    @include transition(background-color);
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  
