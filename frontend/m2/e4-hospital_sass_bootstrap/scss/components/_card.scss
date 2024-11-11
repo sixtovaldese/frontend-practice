@@ -1,0 +1,23 @@
+@use '../abstracts/index' as *;
+@use 'sass:color';
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+.servicio__icon {
+    font-size: $icon-size;
+    color: $primary-color;
+}
+
+.servicio__title {
+    font-weight: bold;
+}

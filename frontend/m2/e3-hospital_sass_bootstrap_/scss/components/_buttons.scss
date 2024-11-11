@@ -1,0 +1,7 @@
+// components/_buttons.scss
+@use '../abstracts/index' as *;
+@use 'sass:color';
+
+.button {
+  @include button-style($primary-color, color.adjust($primary-color, $lightness: -10%));
+}

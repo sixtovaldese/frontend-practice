@@ -1,0 +1,41 @@
+// layout/_footer.scss
+@use '../abstracts/index' as *;
+@use 'sass:color';
+
+.footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+
+  &__links {
+    margin-bottom: 15px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+
+      &:hover {
+        color: color.scale(white, $lightness: -15%); 
+      }
+    }
+  }
+
+  &__contact {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  &__social {
+    a {
+      color: white;
+      margin-right: 10px;
+      font-size: 1.2rem;
+
+      &:hover {
+        color: color.scale(white, $lightness: -15%); 
+      }
+    }
+  }
+}

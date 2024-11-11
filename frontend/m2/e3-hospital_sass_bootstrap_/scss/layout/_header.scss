@@ -1,0 +1,31 @@
+// layout/_header.scss
+@use '../abstracts/index' as *;
+@use 'sass:color';
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 40px;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__button {
+    @include button-style($secondary-color, color.adjust($secondary-color, $lightness: -10%));
+  }
+}

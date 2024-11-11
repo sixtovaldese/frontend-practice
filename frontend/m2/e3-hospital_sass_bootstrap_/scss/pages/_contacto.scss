@@ -1,0 +1,16 @@
+// pages/_contacto.scss
+@use '../abstracts/index' as *;
+
+.contacto {
+    text-align: center;
+  
+    &__form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      color: $primary-color;
+    }
+  }
+  
