@@ -1,0 +1,9 @@
+# Ignorar archivos de documentos
+*.doc
+*.docx
+*.pdf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.zip
