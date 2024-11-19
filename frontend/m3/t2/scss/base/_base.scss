@@ -1,0 +1,7 @@
+// base/_base.scss
+@use '../abstracts/index' as *;
+
+html, body {
+  background-color: $bg-color;
+  font-size: 16px;
+}

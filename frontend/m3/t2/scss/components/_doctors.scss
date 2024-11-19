@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.doctor-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.doctors-title {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.doctor-card {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        color: $primary-color;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $text-muted-color;
+    }
+}

@@ -1,0 +1,6 @@
+// base/_index.scss
+@use '../abstracts/index' as *;
+
+@forward 'reset';
+@forward 'typography';
+@forward 'base';

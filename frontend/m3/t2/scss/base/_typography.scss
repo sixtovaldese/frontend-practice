@@ -1,0 +1,21 @@
+// base/_typography.scss
+@use '../abstracts/index' as *; // Asegura que las variables estén disponibles aquí
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.testimonios__quote {
+  font-style: italic;
+  font-size: $quote-font-size;
+  color: $text-muted-color;
+}
